@@ -1,0 +1,236 @@
+.nav {
+    /* position: fixed; */
+    height: 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px rgba(211, 211, 211, 0.6) solid;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.nav-link {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: small;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 6px 13px;
+    /* border: 1px solid black; */
+}
+
+.nav-link:hover {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: small;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 6px 12px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+.nav-link.active {
+    background-color: cadetblue;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 6px 13px;
+}
+
+.nav-link.active:hover {
+    background-color: rgb(120, 187, 189);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 6px 13px;
+}
+
+.nav-link.disabled {
+    position: relative;
+    background-color: none;
+    color: gray;
+    border: none;
+    background-color: rgb(247, 247, 247);
+    border-radius: 20px;
+    padding: 6px 13px;
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav-btn {
+    background-color:lightsteelblue;
+    border: 1px solid steelblue;
+    position: relative;
+
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 6px 13px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.badge {
+    display: inline-block; /* Hace que el badge se comporte como un elemento en línea */
+    background-color: chocolate; /* Color de fondo del badge */
+    color: white; /* Color del texto del badge */
+    border-radius: 50%; /* Hace que el badge sea redondo */
+    padding: 1px 6px; /* Espacio interno del badge */
+    font-size: 12px; /* Tamaño de fuente del badge */
+    position: absolute; /* Coloca el badge en relación al botón */
+    top: 0; /* Posiciona el badge en el centro vertical del botón */
+    right: -7px; /* Ajusta la posición horizontal del badge */
+    transform: translateY(-50%); /* Centra verticalmente el badge */
+}
+
+h1 {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h6 {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn-primary {
+    background-color:teal;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgb(0, 181, 181);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(250, 245, 237);
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.card-title {
+    background: linear-gradient(to right, #7b00ff, #00ffc3);
+    background-clip: text; /* Para otros navegadores */
+    color: transparent; /* Para otros navegadores */
+}
+
+.card-text {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.alert {
+    padding: 15px; /* Añade espacio interno */
+    border: 1px solid transparent; /* Borde transparente */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Espacio entre alertas */
+    width: max-content;
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.alert-primary {
+    color: #004085; /* Color del texto */
+    background-color: #cce5ff; /* Color de fondo */
+    border-color: #b8daff; /* Color del borde */
+}
+
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón de enviar */
+.btn-submit {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espacio interno */
+    cursor: pointer; /* Cursor de apuntador al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para el checkbox */
+.form-check-input {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+/* Estilos para el contenedor del checkbox */
+.form-check-label {
+    margin-left: 5px;
+}
+
+/* Estilos para las etiquetas de los selects */
+.form-label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los selects */
+.form-select {
+    margin-bottom: 10px;
+}
+
+/* Estilos para las opciones del select */
+.form-select option {
+    color: black; /* Color del texto */
+    background-color: white; /* Color de fondo */
+}
+
+.form-select option:checked {
+    color: white; /* Color del texto */
+    background-color: #007bff; /* Color de fondo */
+}
+
+@media (max-width: 576px) {
+    .col-md-6 {
+        width: 100%;
+    }
+}
